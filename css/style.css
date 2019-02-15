@@ -39,7 +39,7 @@
 
 
 .col{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   margin: 0;
 }
 .container{
@@ -277,7 +277,6 @@
 }
 .menuItem{
   display: inline-block;
-  color: #606060;
   font-family: 'NunitoBoldItalic';
   font-size: 1.2em;
   margin: 0 20px 0 20px;
@@ -294,18 +293,39 @@
 #sectionOneMenu li{
   color: #ffec00;
 }
+
 #sectionTwoMenu li{
   color: #fffccc;
 }
-#sectionTwoMenuFocus{
+#sectionTwoMenu #sectionTwoMenuFocus{
   color: #ffec00;
 }
+
 #sectionThreeMenu li{
-  color: #ffec00;
+  color: #606060;
 }
+#sectionThreeMenu #sectionThreeMenuFocus{
+  color: #66cc00;
+}
+
 #sectionFourMenu li{
+  color: #fffccc;
+}
+#sectionFourMenu #sectionFourMenuFocus{
   color: #ffec00;
 }
+
+
+
+/* #sectionTwoMenuFocus{
+  color: #ffec00;
+} */
+/* #sectionThreeMenu li{
+  color: #ffec00;
+} */
+/* #sectionFourMenu li{
+  color: #ffec00;
+} */
 
 /* TYPOGRAPHY */
 .main-title{
