@@ -382,7 +382,7 @@
   padding-left: 20px;
 }
 .titleBar{
-  margin-left: 80px;
+  margin-left: 0px;
   height: 10vh;
   display: flex;
   justify-content: left;
