@@ -60,7 +60,7 @@
 }
 .content p{
   font-family: 'NunitoLight';
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 1.1em;
 }
 .content h2{
@@ -80,18 +80,17 @@
   width: 100vw;
   margin: 0;
   position: absolute;
-
 }
 
 .contentContainer{
   display: flex;
   justify-content: center;
   align-items: center;
-  height:90vh;
+  height: 70vh;
 }
 .inner{
   position: absolute;
-  top: 30%;
+  top: 20%;
   transform: translate(0, 50%);
 }
 #pageSectionOneBg{
@@ -130,7 +129,7 @@
   margin-top: 50vh;
   background: #66cc00;
   height: 100vh;
-  width: 60vw;
+  width: 57.66vw;
   z-index: 2;
   border-radius: 0 0 50vw 0;
   margin-top: 100vh;
@@ -152,7 +151,7 @@
   margin-top: 50vh;
   background: #ffec00;
   height: 100vh;
-  width: 60vw;
+  width: 49.2vw;
   z-index: 2;
   border-radius: 50vw 0 0 50vw;
   margin-top: 200vh;
@@ -175,7 +174,7 @@
   margin-top: 50vh;
   background: #66cc00;
   height: 100vh;
-  width: 60vw;
+  width: 49.2vw;
   z-index: 2;
   border-radius: 0 30vw 0 0;
   margin-top: 300vh;
@@ -198,7 +197,7 @@
   margin-top: 50vh;
   background: #66cc00;
   height: 100vh;
-  width: 60vw;
+  width: 49.2vw;
   z-index: 2;
   border-radius: 0 0 30vw 0;
   margin-top: 400vh;
@@ -472,5 +471,22 @@
   .span_5_of_8 {
     width: 100vw;
   }
+  .contentContainer{
+    display: block;
+  }
+  #pageSectionOneCircle, #pageSectionTwoCircle, #pageSectionThreeCircle, #pageSectionFourCircle, #pageSectionFiveCircle, #pageSectionSixCircle{
+    border-radius: 0;
+    width: 100vh;
+  }
 
+}
+
+
+
+.column{
+  /* background: red; */
+  max-height: 100%;
+}
+.contentInner{
+  text-align: center;
 }
