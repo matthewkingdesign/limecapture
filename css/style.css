@@ -1,4 +1,17 @@
 /************* DESCRIPTION *************/
+/* Style sheet for Limecapture webiste
+Built by Matthew King matthewking.design
+This stylesheet is currently a work in progress */
+
+/************* CONTENTS *************/
+/*
+1. Color Scheme
+2. Fonts
+3.Universal Styles
+4. Container Styles
+5. Background and Curves
+6.
+*/
 
 /************* COLOUR SCHEME *************/
 /*
@@ -37,10 +50,12 @@
   src: url('../fonts/Nunito-BoldItalic.ttf');
 }
 
-
+/************* UNIVERSAL STYLES *************/
 .col{
   /* border: 1px solid blue; */
 }
+
+/************* CONTAINER *************/
 .container{
   position: relative;
   overflow: hidden;
@@ -49,50 +64,7 @@
   background: #fffef0;
   margin: 0;
 }
-.content{
-  margin: 25px;
-  color: #606060;
-}
-.content h1{
-  font-family: 'NunitoBold';
-  font-size: 1.8em;
-  margin-bottom: 10px;
-}
-.content p{
-  font-family: 'NunitoLight';
-  font-size: 1.3em;
-  line-height: 1.1em;
-}
-.content h2{
-  font-family: 'NunitoReg';
-  font-size: 1.5em;
-  line-height: 1.5em;
-  margin: 10px 0 10px 0;
-}
-.content h3{
-  font-family: 'NunitoReg';
-  font-size: 1.5em;
-  line-height: 1.5em;
-  margin: 10px 0 10px 0;
-}
-.pageSection{
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  position: absolute;
-}
-
-.contentContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-}
-.inner{
-  position: absolute;
-  top: 20%;
-  transform: translate(0, 50%);
-}
+/************* BACKGROUND AND CIRCLES *************/
 #pageSectionOneBg{
   position: absolute;
   top: 0;
@@ -156,7 +128,6 @@
   border-radius: 50vw 0 0 50vw;
   margin-top: 200vh;
 }
-
 #pageSectionFourBg{
   position: absolute;
   top: 0;
@@ -179,7 +150,6 @@
   border-radius: 0 30vw 0 0;
   margin-top: 300vh;
 }
-
 #pageSectionFiveBg{
   position: absolute;
   top: 0;
@@ -202,7 +172,6 @@
   border-radius: 0 0 30vw 0;
   margin-top: 400vh;
 }
-
 #pageSectionSixBg{
   position: absolute;
   top: 0;
@@ -248,22 +217,56 @@
   z-index: 3;
   margin-top: 500vh;
 }
-/*
-#pageSectionFour{
-  background: #ffec00;
-  border-radius: 0 0 0 30vw;
-  margin-top: 400vh;
+
+
+
+/************* MAIN CONTENT*************/
+/************* COPY & INFORMATION *************/
+.content{
+  margin: 25px;
+  color: #606060;
 }
-#pageSectionFive{
-  background: #66cc00;
-  border-radius: 0 60vw 0 0;
-  margin-top: 500vh;
+.content h1{
+  font-family: 'NunitoBold';
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
-#pageSectionSix{
-  background: #606060;
-  border-radius: 0 0 50vw 50vw;
-  margin-top: 600vh;
-} */
+.content p{
+  font-family: 'NunitoLight';
+  font-size: 1.3em;
+  line-height: 1.1em;
+}
+.content h2{
+  font-family: 'NunitoReg';
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 10px 0 10px 0;
+}
+.content h3{
+  font-family: 'NunitoReg';
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin: 10px 0 10px 0;
+}
+.pageSection{
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: absolute;
+}
+.contentContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.firstPageContentContainer, .lastPageContentContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 
 
 /* MENU */
@@ -325,18 +328,6 @@
   color: #ffec00;
 }
 
-
-
-/* #sectionTwoMenuFocus{
-  color: #ffec00;
-} */
-/* #sectionThreeMenu li{
-  color: #ffec00;
-} */
-/* #sectionFourMenu li{
-  color: #ffec00;
-} */
-
 /* TYPOGRAPHY */
 .main-title{
   /* margin-top: 40vh; */
@@ -383,11 +374,13 @@
   color: #fffccc;
   padding-left: 20px;
 }
+
+
 .titleBar{
   margin-left: 0px;
   height: 10vh;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   text-align:center;
 }
@@ -430,12 +423,6 @@
   align-items: center;
   text-align:center;
 }
-#aboutsUsTitleBar{
-  margin-left: 100px;
-}
-#serviceTileBar{
-  margin-left: 100px;
-}
 #serviceTitle{
     font-size:3em;
     color:#66cc00;
@@ -460,6 +447,10 @@
 #pageSectionOneContent{
   display: none;
 }
+.columnRevealDevice{
+  display: none;
+}
+
 
 @media only screen and (max-width: 480px) {
 	.span_3_of_8 {
@@ -471,22 +462,101 @@
   .span_5_of_8 {
     width: 100vw;
   }
+  .container{
+    height: 710vh;
+  }
   .contentContainer{
     display: block;
   }
-  #pageSectionOneCircle, #pageSectionTwoCircle, #pageSectionThreeCircle, #pageSectionFourCircle, #pageSectionFiveCircle, #pageSectionSixCircle{
-    border-radius: 0;
-    width: 100vh;
+  #pageSectionTwoCircle, #pageSectionThreeCircle, #pageSectionFourCircle, #pageSectionFiveCircle, #pageSectionSixCircle{
+    width: 100vw;
   }
+  .mainTitleItem{
+    font-size: 2em;
+  }
+  .sub-title{
+    font-size: 1.1em;
+  }
+  .menuIcon{
+    height: 30px;
+  }
+  #eventTitle, #whyTitle, #serviceTitle, #aboutUsTitle{
+    font-size: 2em;
+  }
+  #aboutUsTitle, #whyTitle{
+    color: #606060;
+  }
+  #serviceTitle{
+    color: #fffccc;
+  }
+  .content{
+    margin: 0;
+  }
+  .content p{
+    font-size: 1.2em;
+    padding: 20px;
+  }
+  .content h1, .content h3{
+    font-size: 1.4em;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
+  .menuBar{
+    display: none;
+  }
+  .deviceViewCreamType{
+    color: #fffccc;
+  }
+  .deviceViewGreyType{
+    color: #606060;
+  }
+  #pageSectionTwo, #pageSectionTwoBg, #pageSectionTwoCircle{
+    margin-top: 110vh;
+  }
+  #pageSectionThree, #pageSectionThreeBg, #pageSectionThreeCircle{
+    margin-top: 220vh;
+  }
+  #pageSectionFour, #pageSectionFourBg, #pageSectionFourCircle{
+    height: 170vh;
+    margin-top: 330vh;
+  }
+  #pageSectionFive, #pageSectionFiveBg, #pageSectionFiveCircle{
+    margin-top: 510vh;
+  }
+  #pageSectionSix, #pageSectionSixBg, #pageSectionSixCircle{
+    margin-top: 620vh;
+  }
+  .columnHiddenDevice{
+    display: none;
+  }
+  .columnRevealDevice{
+    display: block;
+  }
+  #serviceTileBar{
+    margin: 0;
+  }
+  #pageSectionOneCircle{
+    border-radius: 0 60vw 0 60vw;
+  }
+  #pageSectionTwoCircle{
+    border-radius: 20vw 0 20vw 0;
+  }
+  #pageSectionThreeCircle{
+    border-radius: 30vw 0 0 30vw;
+  }
+  #pageSectionFourCircle{
+    border-radius: 0 30vw 30vw 0;
 
-}
-
-
-
-.column{
-  /* background: red; */
-  max-height: 100%;
-}
-.contentInner{
-  text-align: center;
+  }
+  #pageSectionFiveCircle{
+    border-radius: 0 30vw 0 30vw;
+    background-color: #ffec00;
+  }
+  #pageSectionSixCircle{
+    border-radius: 70vw 0 0 0;
+  }
+  #emailTitle{
+    font-size: 1em;
+  }
 }
