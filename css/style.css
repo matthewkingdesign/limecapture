@@ -438,7 +438,7 @@ This stylesheet is currently a work in progress */
 }
 .invisible{
   opacity: 0;
-  transition: all 500ms ease-in;
+  transition: all 300ms ease-in;
 }
 
 .visible{
@@ -447,12 +447,10 @@ This stylesheet is currently a work in progress */
 .invisible-test{
   opacity: 0;
   transition: all 500ms ease-in;
-  margin-top: 200px;
 }
 
 .visible-test{
   opacity: 1;
-  margin-top: 0;
 }
 
 

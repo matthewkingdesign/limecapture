@@ -1,8 +1,16 @@
 $('#pageSectionTwo').waypoint(function(direction){
   if (direction == 'down'){
-    $('#pageSectionTwoContent ').addClass('visible');
+    $('#sectionTwoMenu').addClass('visible');
   } else {
-    $('#pageSectionTwoContent ').removeClass('visible');
+    $('#sectionTwoMenu').removeClass('visible');
+  }
+}, { offset: '30%' });
+
+$('#pageSectionTwo').waypoint(function(direction){
+  if (direction == 'down'){
+    $('#sectionTwoContentContainer').addClass('visible');
+  } else {
+    $('#sectionTwoContentContainer').removeClass('visible');
   }
 }, { offset: '30%' });
 
